@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <select  >
+        <option value="bmw">Valvo</option>
+          <option name="cars" id="valvo" value="valvo">bmw</option>
+    </select>
+  </body>
+  <script>
+      var s=document.getElementsByName('cars')[0];
+      // S.ON('CLICK',FUNCTION(E){
+      //   CONSOLE.LOG("CLICKED VALVO")
+      // });
+      //OTHER WAY DO IT->
+      //BELOW IS ANONYMOUS FUNCTION
+      //S.ONCLICK=FUNCTION(){ CONSOLE.LOG("CLICKED VALVO")}
+      //IF S.ADDEVENTLISTENER('CLICK',FUNCTION(E){ CONSOLE.LOG("CLICKED VALVO")}); USED ,THE REMOVE EVENT LISTENER IS NOT POSSIBLE BECAUSE OF THE CALLBACK ANONYMOUS FUNCTION
+
+      //NOW FUNCTION IS NOT ANONYMOUS SO WE CAN REMOVE EVENT LISTENER
+      function callback(event){ console.log("clicked valvo")}
+      s.addEventListener('click',callback);
+
+      //REMOVE LISTENER
+      s.removeEventListener("click",callback);
+  </script>
+</html>
+<!--
+EVENT HANDLERS ARE JS METHODS THAT CONTROL THE PAGE ACTION ON THE
+FIRING OF SOME USER ACTIONS
+-->

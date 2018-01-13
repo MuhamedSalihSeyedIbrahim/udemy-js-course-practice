@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>JAVASCRIPT ESSENTIALS</title></head>
+<body>
+  <select id="bg">
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">blue</option>
+  </select>
+  <select id="width">
+    <option value="100px">100px</option>
+    <option value="200px">200px</option>
+    <option value="300px">300px</option>
+  </select>
+  <select id="height">
+    <option value="100px">100px</option>
+    <option value="200px">200px</option>
+    <option value="300px">300px</option>
+  </select>
+<button id="set">set</button>
+
+<div id="modify" style="width:300px;height:300px;">
+
+</div>
+
+</body>
+<script>
+  var set = document.getElementById('set'),x=document.getElementById('modify');
+  set.onclick=function(){
+    var bg=document.getElementById('bg').value,
+    w=document.getElementById('width').value,
+    h=document.getElementById('height').value;
+
+    x.style.cssText="width:"+w+";height:"+h+";background:"+bg;
+  console.log(document.getElementsByName('cssProperty'))
+  }
+
+</script>
+
+</html>

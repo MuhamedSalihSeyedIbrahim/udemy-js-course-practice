@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+  </body>
+  <script>
+//CREATE AND APPEND CHILD
+      var s=document.createElement('div');
+      s.style.cssText="width:200px;height:400px;background:blue";
+      s.onclick=function(){
+        alert('hello');
+      }
+
+      document.body.appendChild(s);
+      //VAR TARGET=DOCUMENT.GETELEMENTBYID('X');//BEFORE WHICH THE NODE IS INSERTED
+      //DOCUMENT.BODY.INSERTBEFORE(ELEMENT,TARGET);
+  </script>
+</html>
